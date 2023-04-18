@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import * as url from "url";
+import React from 'react'
 
 type Props = {
     favicon?: string
@@ -19,13 +18,12 @@ type Props = {
     image?: string
 
 }
-const Login = ({ favicon,logo,showLanguage,userNameLabel,passwordLabel,showRole
-languageList,roleList,primaryColor,secondaryColor,onLogin,error,style,footer,image}: Props) => {
+const Login = ({ image='test.jpg'}: Props) => {
 
   return (
     <div>
         <div>
-            <image src={image}/>
+            <img src={image} alt={'login'}/>
         </div>
     </div>
   )
