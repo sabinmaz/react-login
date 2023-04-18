@@ -5,14 +5,9 @@ import {Login} from "react-login-dynamic"
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
-        <div>
-            <h2>Default counter</h2>
-            <Login />
-        </div>
-        <hr />
-        <div>
-            <h2>Counter with predefined value</h2>
-            <Login value={5} />
+        <div className={"login"}>
+
+            <Login image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcjwBjErg0BEdVO88E6_a4KxB-3nsdwn41NQ&usqp=CAU' />
         </div>
     </React.StrictMode>,
 )

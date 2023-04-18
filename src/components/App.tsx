@@ -24,6 +24,7 @@ const Login = ({ image='test.jpg'}: Props) => {
     <div>
         <div>
             <img src={image} alt={'login'}/>
+            <p>test</p>
         </div>
     </div>
   )
