@@ -18,7 +18,7 @@ type Props = {
     image?: string
 
 }
-const Login = ({ image='test.jpg'}: Props) => {
+const Login = ({ image=require('4957136.jpg')}: Props) => {
 
   return (
     <div>
