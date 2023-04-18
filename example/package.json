@@ -14,6 +14,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "login": "github:sabinmaz/react-login"
+    "login": "github:sabinmaz/react-login",
+    "react-login-dynamic": "github:sabinmaz/react-login"
   }
 }

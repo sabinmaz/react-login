@@ -1,24 +1,32 @@
 import React, { useState } from 'react'
+import * as url from "url";
 
 type Props = {
-  value?: number
+    favicon?: string
+    logo?:string
+    showLanguage?:boolean
+    userNameLabel?:string
+    passwordLabel?: string
+    showRole?: string
+    languageList?:[]
+    roleList?:[]
+    primaryColor?:string
+    secondaryColor?:string
+    onLogin?: React.MouseEventHandler<HTMLButtonElement>
+    error?:{}
+    style?:{}
+    footer?:React.ReactElement
+    image?: string
+
 }
-const Login = ({ value = 0 }: Props) => {
-  const [counter, setCounter] = useState(value)
-
-  const onMinus = () => {
-    setCounter((prev) => prev - 1)
-  }
-
-  const onPlus = () => {
-    setCounter((prev) => prev + 1)
-  }
+const Login = ({ favicon,logo,showLanguage,userNameLabel,passwordLabel,showRole
+languageList,roleList,primaryColor,secondaryColor,onLogin,error,style,footer,image}: Props) => {
 
   return (
     <div>
-      <h1>Counter: {counter}</h1>
-      <button onClick={onMinus}>-</button>
-      <button onClick={onPlus}>+</button>
+        <div>
+            <image src={image}/>
+        </div>
     </div>
   )
 }
