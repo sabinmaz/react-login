@@ -5,6 +5,7 @@
     "node_modules"
   ],
   "compilerOptions": {
+    "typeRoots" : ["node_modules/@types", "src/index.d.ts"],
     "module": "esnext",
     "lib": ["dom", "esnext"],
     "importHelpers": true,
